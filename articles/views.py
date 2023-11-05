@@ -23,7 +23,7 @@ def article_list(request):
     except EmptyPage:
         articles = paginator.page(paginator.num_pages)
 
-    return render(request, 'articles.html', {'article_list':articles, 'page':page})
+    return render(request, 'articles.html', {'article_list':article_list, 'page':page})
 
 
 def article_details(request, slug):
