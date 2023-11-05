@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Article List</title>
+    </head>
+    <body>
+
+    </body>
+
+</html>
+
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} {% endblock %}
+
+{% block style %}
+  <style>
+        .login_style{
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+</div>
+
+{% endblock %}
