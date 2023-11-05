@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Login {% endblock %}
+
+{% block style %}
+
+    <style>
+        .login_style{
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container mt-4 login_style">
+    <h1>Login User</h1>
+
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {{form | crispy}}
+        
+        <input type="hidden" name="next" value="{{next}}">
+        <input type="submit" value="login" class="btn btn-success">
+
+    </form>
+
+    <div class="row mt-4">
+        <div class="col">
+            <button class="btn btn-primary">
+                <a class="link-style" href="{% url 'social:begin' 'facebook' %}"> SignIn Facebook </a>
+            </button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">
+            <button class="btn btn-dnager">
+                <a class="link-style" href="{% url 'social:begin' 'github' %}"> SignIn github </a>
+            </button>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <button class="btn btn-warning">
+                <a class="link-style" href="{% url 'social:begin' 'linkedin-outh2' %}"> SignIn Linkedine </a>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
