@@ -5,7 +5,7 @@ from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView,
 #as_view() is a class base view in django default template
 
 urlpatterns = [
-    #path("", article_list, name="article_list"),
+    path("", article_list, name="article_list"),
     path("articles/", article_list, name="article_list"),
     path("add/", article_form, name="article_form"),
     path("articles/<slug:slug>/", article_details, name="article_details"),
