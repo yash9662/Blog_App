@@ -40,19 +40,27 @@
     </form>
 
     <div class="row mt-4">
-        <div class="col">
-            <button class="btn btn-primary">
-                <a class="link-style" href="{% url 'social:begin' 'facebook' %}"> SignIn Facebook </a>
-            </button>
-    
-            <button class="btn btn-danger">
-                <a class="link-style" href="{% url 'social:begin' 'github' %}"> SignIn github </a>
-            </button>
-        
-            <button class="btn btn-warning">
-                <a class="link-style" href="{% url 'social:begin' 'linkedin-oauth2' %}"> SignIn Linkedine </a>
-            </button>
-        </div>
+      <div class="col">
+        <button class="btn btn-primary">
+          <a class="link-style" href="{% url 'social:begin' 'facebook' %}">Signin Facebook</a>
+
+        </button>
+      </div>
+
+       <div class="col">
+        <button class="btn btn-danger">
+          <a class="link-style" href="{% url 'social:begin' 'github' %}">Signin Github</a>
+
+        </button>
+      </div>
+
+       <div class="col">
+        <button class="btn btn-warning">
+          <a class="link-style" href="{% url 'social:begin' 'linkedin-oauth2' %}">Signin Linkedin</a>
+
+        </button>
+      </div>
+
     </div>
 
 </div>
