@@ -9,6 +9,11 @@
             width: 500px;
             margin: auto;
         }
+        .login_style:hover{
+            text-decoration: none;
+            color: gray;
+        }
+
     </style>
 
 {% endblock %}
@@ -32,18 +37,11 @@
             <button class="btn btn-primary">
                 <a class="link-style" href="{% url 'social:begin' 'facebook' %}"> SignIn Facebook </a>
             </button>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col">
+    
             <button class="btn btn-dnager">
                 <a class="link-style" href="{% url 'social:begin' 'github' %}"> SignIn github </a>
             </button>
-        </div>
-    </div>
-
-    <div class="row mt-4">
-        <div class="col">
+        
             <button class="btn btn-warning">
                 <a class="link-style" href="{% url 'social:begin' 'linkedin-oauth2' %}"> SignIn Linkedine </a>
             </button>
